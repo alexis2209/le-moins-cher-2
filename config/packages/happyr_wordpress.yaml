@@ -1,0 +1,8 @@
+wordpress:
+  url: 'http://wp.le-moins-cher.fr/wp-json'
+  controller:
+    index_template: wordpress/index.html.twig
+    page_template: wordpress/page.html.twig
+  cache:
+    service: 'Symfony\Contracts\Cache\CacheInterface'
+    ttl: 0 # One week
